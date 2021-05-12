@@ -4,7 +4,7 @@
 **Environmental issues** are becoming more and more severe in the present world. One of the factors that cause the deterioration of the environment is human activities. We want to find out how the human’s actions impact the environment and what are the potential dangers it brings to the future.
 
 ### Examples of other data driven projects related to this domain.
-- [the United Nations](https://fra-data.fao.org/) Agenda 15 of the United Nations is about sustainable development, which includes the loss of forest on Earth. This website provides information about forest resource assessment, and people can sort the data by countries and regions.
+- [Global Forest Watch](https://www.globalforestwatch.org/dashboards/global/?category=summary&location=WyJnbG9iYWwiXQ%3D%3D&map=eyJkYXRhc2V0cyI6W3sib3BhY2l0eSI6MC43LCJ2aXNpYmlsaXR5Ijp0cnVlLCJkYXRhc2V0IjoicHJpbWFyeS1mb3Jlc3RzIiwibGF5ZXJzIjpbInByaW1hcnktZm9yZXN0cy0yMDAxIl19LHsiZGF0YXNldCI6InBvbGl0aWNhbC1ib3VuZGFyaWVzIiwibGF5ZXJzIjpbImRpc3B1dGVkLXBvbGl0aWNhbC1ib3VuZGFyaWVzIiwicG9saXRpY2FsLWJvdW5kYXJpZXMiXSwiYm91bmRhcnkiOnRydWUsIm9wYWNpdHkiOjEsInZpc2liaWxpdHkiOnRydWV9LHsiZGF0YXNldCI6InRyZWUtY292ZXItbG9zcyIsImxheWVycyI6WyJ0cmVlLWNvdmVyLWxvc3MiXSwib3BhY2l0eSI6MSwidmlzaWJpbGl0eSI6dHJ1ZSwicGFyYW1zIjp7InRocmVzaG9sZCI6MzAsInZpc2liaWxpdHkiOnRydWV9fV19) This website demonstrates the forest loss from 2002 to 2020. It also sorts the data by country.  
 - [Global Temperature Change by NASA](https://climate.nasa.gov/vital-signs/global-temperature/) shows the change in global land-ocean temperature relative to 1880-2020 average temperatures.
 
 
@@ -23,7 +23,7 @@
 
 - There are 4 features in the data.
 
-- The questions **Whether there is a relationship between the climate change and forest loss?** can be answered by this dataset. Furthermore, this dataset can help to explore the forest decreasing rate. 
+- The questions **Whether there is a relationship between the climate change and forest loss?** can be answered by this dataset. Furthermore, this dataset can help to explore the forest decreasing rate.
 
 ### Global Climate Change Dataset
 
