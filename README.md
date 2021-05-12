@@ -17,17 +17,13 @@
 
 - We downloaded the dataset from this [website](https://ourworldindata.org/grapher/annual-change-forest-area)
 
-- This data is collected by Hannah Ritchie, and the data source is from [the UN Food and Agriculture Organization](https://fra-data.fao.org/ ). This data is about the net change of forest area, and it is divided into 5 years period to deal with the volatility of changes.
+- This data is collected by Hannah Ritchie, and the data source is from the UN Food and Agriculture Organization. This data is about the net change of forest area, and it is divided into 5 years period to deal with the volatility of changes.
 
 - There are 476 observations in the data.
 
 - There are 4 features in the data.
 
-*(The questions part may need edit)*
-
-- _Which country has the highest net increase in forest area?_
-- _Which country has the highest net decrease in forest area?_
-- _What is the globally average change in forest cover?_
+- The questions **Whether there is a relationship between the climate change and forest loss?** can be answered by this dataset. Furthermore, this dataset can help to explore the forest decreasing rate. 
 
 ### Global Climate Change Dataset
 
