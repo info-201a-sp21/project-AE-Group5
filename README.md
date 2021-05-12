@@ -5,7 +5,7 @@
 
 ### Examples of other data driven projects related to this domain.
 - [the United Nations](https://fra-data.fao.org/) Agenda 15 of the United Nations is about sustainable development, which includes the loss of forest on Earth. This website provides information about forest resource assessment, and people can sort the data by countries and regions.
-- [Global Temperature Change by NASA](https://climate.nasa.gov/vital-signs/global-temperature/)shows the change in global land-ocean temperature relative to 1880-2020 average temperatures.
+- [Global Temperature Change by NASA](https://climate.nasa.gov/vital-signs/global-temperature/) shows the change in global land-ocean temperature relative to 1880-2020 average temperatures.
 
 
 ### What data-driven questions do you hope to answer about this domain?
