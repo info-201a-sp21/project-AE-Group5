@@ -10,7 +10,7 @@
 
 ### What data-driven questions do you hope to answer about this domain?
 - **Whether there is a relationship between the climate change and forest loss?** Forest is the place that can consume carbon dioxide (CO2), and one cause of climate change is increase in carbon dioxide (CO2) concentration. If the year of climate change becomes severe matches the year that the number of forest decreases, there might be a relationship between them.
-- **Whether there is a relationship between the climate change and fossil fuel combustion?** This question can be answered by compared with datasets of climate change and fossil fuel combustion and find out if the used of fossil fuel combustion have influence on climate change.
+- **Whether there is a relationship between the climate change and fossil fuel combustion?** This question can be answered by comparing with datasets of climate change and fossil fuel combustion to find out if the used of fossil fuel combustion have influenced on climate change.
 
 ## Finding Data
 ### Forest Loss Dataset
