@@ -13,6 +13,7 @@ get_summary_info <- function(dataset) {
 
   # Which year has the highest fossil fuels?
   result$year_highest_ff <- dataset %>%
+    filter(Entity != "World") %>%
     group_by(Year) %>%
     summarize(total_combustion = sum(Fossil.Fuels..TWh.)) %>%
     filter(total_combustion == max(total_combustion)) %>%
@@ -20,6 +21,7 @@ get_summary_info <- function(dataset) {
 
   # Which year has the lowest fossil fuels?
   result$year_lowest_ff <- dataset %>%
+    filter(Entity != "World") %>%
     group_by(Year) %>%
     summarize(total_combustion = sum(Fossil.Fuels..TWh.)) %>%
     filter(total_combustion == min(total_combustion)) %>%
@@ -34,6 +36,7 @@ get_summary_info <- function(dataset) {
 
   # What is the mean of fossil fuels in 1965 and 2019?
   result$mean_ff <- dataset %>%
+    filter(Entity != "World") %>%
     summarize(mean_ff = mean(Fossil.Fuels..TWh.)) %>%
     pull(mean_ff)
 
