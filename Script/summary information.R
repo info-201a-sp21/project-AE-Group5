@@ -6,7 +6,8 @@ library(dplyr)
 library(lintr)
 
 
-fossil_fuel_combustion <- read.csv("data/fossil-fuel-primary-energy.csv")
+fossil_fuel_combustion <- read.csv("data/fossil-fuel-primary-energy.csv",
+                                   stringsAsFactors = FALSE)
 
 get_summary_info <- function(dataset) {
   result <- list()
