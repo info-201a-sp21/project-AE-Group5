@@ -7,7 +7,8 @@ library(lintr)
 
 
 fossil_fuel_combustion <- read.csv("data/fossil-fuel-primary-energy.csv",
-                                   stringsAsFactors = FALSE)
+  stringsAsFactors = FALSE
+)
 
 get_summary_info <- function(dataset) {
   result <- list()
@@ -46,9 +47,11 @@ get_summary_info <- function(dataset) {
     filter(Year == "1965" | Year == "2019") %>%
     filter(Entity != "World") %>%
     group_by(Entity) %>%
-    summarise(ff_1965 = Fossil.Fuels..TWh.[which(Year == "1965")],
-              ff_2019 = Fossil.Fuels..TWh.[which(Year == "2019")],
-              abs_value = ff_2019 - ff_1965, .groups = "drop") %>%
+    summarise(
+      ff_1965 = Fossil.Fuels..TWh.[which(Year == "1965")],
+      ff_2019 = Fossil.Fuels..TWh.[which(Year == "2019")],
+      abs_value = ff_2019 - ff_1965, .groups = "drop"
+    ) %>%
     filter(abs_value == max(abs_value)) %>%
     pull(Entity)
 
