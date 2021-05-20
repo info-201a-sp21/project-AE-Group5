@@ -33,4 +33,12 @@ show(aggregated_table)
 show(scatter_plot)
 ```
 
+The purpose of this scatter plot was to display the relationship between each year and the total fossil fuels consumption worldwide (in terawatt-hours). This visualization shows that there is a strong positive near linear relationship between fossil fuel usage and year, as the consumption increases nearly every year with a few outliers, namely in the late 1970s through the early 1980s and in 2009 when fuel consumption declined. Overall, the worldwide fossil fuel consumption increased by approximately 3.5 times from 1965 to 2019, and the trend is stable in it's increase showing no sign of slowing down.
+
 ## Bar Chart
+
+```{r}
+show(bar_plot)
+```
+
+
