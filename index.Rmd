@@ -6,6 +6,7 @@ knitr::opts_chunk$set(echo = FALSE, message = FALSE, warning = FALSE)
 source("Script/aggregate_table.R")
 source("Script/scatter plot.R")
 source("Script/summary information.R")
+source("Script/bar_chart.R")
 ```
 
 # Summary Report
