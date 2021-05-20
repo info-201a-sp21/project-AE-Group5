@@ -30,4 +30,4 @@ bar_chart <- function(dataset) {
     coord_flip()
 }
 
-bar_chart(fossil_fuel_combustion)
+bar_plot <- bar_chart(fossil_fuel_combustion)

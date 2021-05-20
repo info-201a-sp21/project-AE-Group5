@@ -17,4 +17,28 @@ The dataset we used concerns the use of fossil fuels by county. More specificall
 
 ## Summary Information
 
-The year that had the lowest fossil fuel consumption was `r result$year_lowest_ff` while the year that had the highest fossil fuel consumption was `r result$year_highest_ff`. In terms of countries in 2019, the most recent year in the data, the country with the highest fossil fuel consumption was `r result$country_highest_ff_2019`. Although in terms of the entire history of the dataset, the country which used the most fossil fuels overall in absolute value terms is `r result$country_highest_abs_ff`. The mean fossil fuel usage over the history of the dataset is `result$mean_ff`.
+The year that had the lowest fossil fuel consumption was `r summary_info[2]` while the year that had the highest fossil fuel consumption was `r summary_info[1]`. In terms of countries in 2019, the most recent year in the data, the country with the highest fossil fuel consumption was `r summary_info[3]`. Although in terms of the entire history of the dataset, the country which used the most fossil fuels overall in absolute value terms is `r summary_info[4]`. The mean fossil fuel usage over the history of the dataset is `r summary_info[5]`.
+
+## Aggregate Table
+
+```{r}
+show(aggregated_table)
+```
+
+The chart displays that every continent, and nearly every country, increased its fossil fuel usage from 1965 to 2019. Some notable exceptions include the United Kingdom, Sweden, Czechia, Germany, and France. Interestingly, all the countries that did decrease their fossil fuel consumption are located in Europe (although the continent of Europe as a whole increased its consumption). Another interesting insight is that China increased its consumption by more than any other individual country or continent, showing the sharp increase in its industrial capacity.
+
+## Scatter Plot
+
+```{r}
+show(scatter_plot)
+```
+
+The purpose of this scatter plot is to display the relationship between each year and the total fossil fuels consumption worldwide (in terawatt-hours). This visualization shows that there is a strong positive near linear relationship between fossil fuel usage and year, as the consumption increases nearly every year with a few outliers, namely in the late 1970s through the early 1980s and in 2009 when fuel consumption declined. Overall, the worldwide fossil fuel consumption increased by approximately 3.5 times from 1965 to 2019, and the trend is stable in it's increase showing no sign of slowing down.
+
+## Bar Chart
+
+```{r}
+show(bar_plot)
+```
+
+The purpose of this stacked bar chart is to show fossil fuel usage of each country by decade, thereby allowing to compare each individual country's usage and its increase over the years. 
