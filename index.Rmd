@@ -17,4 +17,17 @@ The dataset we used concerns the use of fossil fuels by county. More specificall
 
 ## Summary Information
 
-The year that had the lowest fossil fuel consumption was `r result$year_lowest_ff` while the year that had the highest fossil fuel consumption was `r result$year_highest_ff`. In terms of countries in 2019, the most recent year in the data, the country with the highest fossil fuel consumption was `r result$country_highest_ff_2019`. Although in terms of the entire history of the dataset, the country which used the most fossil fuels overall in absolute value terms is `r result$country_highest_abs_ff`. The mean fossil fuel usage over the history of the dataset is `result$mean_ff`.
+The year that had the lowest fossil fuel consumption was `r summary_info[2]` while the year that had the highest fossil fuel consumption was `r summary_info[1]`. In terms of countries in 2019, the most recent year in the data, the country with the highest fossil fuel consumption was `r summary_info[3]`. Although in terms of the entire history of the dataset, the country which used the most fossil fuels overall in absolute value terms is `r summary_info[4]`. The mean fossil fuel usage over the history of the dataset is `r summary_info[5]`.
+
+## Aggregate Table
+
+```{r}
+show(aggregated_table)
+```
+
+
+
+## Scatter Plot
+
+
+## Bar Chart
