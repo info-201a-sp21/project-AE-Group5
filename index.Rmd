@@ -1,0 +1,9 @@
+```{r, echo=FALSE}
+knitr::opts_chunk$set(echo = FALSE, message = FALSE, warning = FALSE)
+```
+
+```{r}
+source("aggregate_table.R")
+source("scatter plot.R")
+source("summary information.R")
+```
