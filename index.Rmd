@@ -25,7 +25,7 @@ The year that had the lowest fossil fuel consumption was `r summary_info[2]` whi
 show(aggregated_table)
 ```
 
-The chart displays that every continent, and nearly every country, increased its fossil fuel usage from 1965 to 2019. Some notable exceptions include the United Kingdom, Sweden, Czechia, Germany, and France. Interestingly, all the countries that did decrease their fossil fuel consumption are located in Europe (although the continent of Europe as a whole increased its consumption). 
+The chart displays that every continent, and nearly every country, increased its fossil fuel usage from 1965 to 2019. Some notable exceptions include the United Kingdom, Sweden, Czechia, Germany, and France. Interestingly, all the countries that did decrease their fossil fuel consumption are located in Europe (although the continent of Europe as a whole increased its consumption). Another interesting insight is that China increased its consumption by more than any other individual country or continent, showing the sharp increase in its industrial capacity.
 
 ## Scatter Plot
 
