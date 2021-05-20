@@ -27,4 +27,4 @@ scatter_plot_chart <- function(dataset) {
          x = "Year", y = "Fossil Fuels")
 }
 
-scatter_plot_chart(fossil_fuel_combustion)
+scatter_plot <- scatter_plot_chart(fossil_fuel_combustion)

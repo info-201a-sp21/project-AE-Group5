@@ -29,5 +29,8 @@ show(aggregated_table)
 
 ## Scatter Plot
 
+```{r}
+show(scatter_plot)
+```
 
 ## Bar Chart
