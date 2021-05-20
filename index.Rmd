@@ -3,7 +3,17 @@ knitr::opts_chunk$set(echo = FALSE, message = FALSE, warning = FALSE)
 ```
 
 ```{r}
-source("aggregate_table.R")
-source("scatter plot.R")
-source("summary information.R")
+source("Script/aggregate_table.R")
+source("Script/scatter plot.R")
+source("Script/summary information.R")
 ```
+
+# Summary Report
+
+## Introduction
+
+The dataset we used concerns the use of fossil fuels by county. More specifically, the data show fossil fuel consumption throughout the last few decades in a multitude of countries in terawatt-hours. The detailed data allow us to thoroughly analyze numerous trends such as the fossil fuel consumption over the years of certain countries, grouping them by either their geography or other factors. We can also compare fossil fuel consumption data to climate change data in order to have a more in-depth analysis about trends in that area and see to what extent these variables correlate.
+
+## Summary Information
+
+The year that had the lowest fossil fuel consumption was `r result$year_lowest_ff` while the year that had the highest fossil fuel consumption was `r result$year_highest_ff`. In terms of countries in 2019, the most recent year in the data, the country with the highest fossil fuel consumption was `r result$country_highest_ff_2019`. Although in terms of the entire history of the dataset, the country which used the most fossil fuels overall in absolute value terms is `r result$country_highest_abs_ff`. The mean fossil fuel usage over the history of the dataset is `result$mean_ff`.
