@@ -3,10 +3,9 @@
 library("dplyr")
 library("ggplot2")
 
-
 fossil_fuel_combustion <- read.csv("data/fossil-fuel-primary-energy.csv",
-  stringsAsFactors = FALSE
-)
+                                   stringsAsFactors = FALSE)
+
 names(fossil_fuel_combustion)[1] <- "country"
 
 

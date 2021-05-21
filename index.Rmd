@@ -1,16 +1,28 @@
+---
+title: "Summary Report"
+author: "AE group5"
+date: "2021/5/15"
+output: html_document
+---
+
 ```{r, echo=FALSE}
-knitr::opts_chunk$set(echo = FALSE, message = FALSE, warning = FALSE)
+knitr::opts_chunk$set(echo = TRUE)
 ```
 
-```{r}
-source("Script/aggregate_table.R")
-source("Script/scatter plot.R")
-source("Script/summary information.R")
+```{r include=FALSE}
+fossil_fuel_combustion <- read.csv("data/fossil-fuel-primary-energy.csv",
+                                   stringsAsFactors = FALSE)
+```
+
+```{r include = FALSE}
 source("Script/bar_chart.R")
 source("Script/pie_chart.R")
-```
+source("Script/scatter plot.R")
+source("Script/aggregate_table.R")
+source("Script/summary information.R")
+library("knitr")
 
-# Summary Report
+```
 
 ## Introduction
 
@@ -22,15 +34,15 @@ The year that had the lowest fossil fuel consumption was `r summary_info[2]` whi
 
 ## Aggregate Table
 
-```{r}
-show(aggregated_table)
+```{r echo=FALSE}
+kable(aggregated_table)
 ```
 
 The chart displays that every continent, and nearly every country, increased its fossil fuel usage from 1965 to 2019. Some notable exceptions include the United Kingdom, Sweden, Czechia, Germany, and France. Interestingly, all the countries that did decrease their fossil fuel consumption are located in Europe (although the continent of Europe as a whole increased its consumption). Another interesting insight is that China increased its consumption by more than any other individual country or continent, showing the sharp increase in its industrial capacity.
 
 ## Scatter Plot
 
-```{r}
+```{r echo = FALSE}
 show(scatter_plot)
 ```
 
@@ -38,7 +50,7 @@ The purpose of this scatter plot is to display the relationship between each yea
 
 ## Bar Chart
 
-```{r}
+```{r echo = FALSE}
 show(bar_plot)
 ```
 
@@ -47,6 +59,6 @@ The purpose of this stacked bar chart is to show fossil fuel usage of each count
 
 ## Pie Chart
 
-```{r}
+```{r echo=FALSE}
 show(pie_plot)
 ```

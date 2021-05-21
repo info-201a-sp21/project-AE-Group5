@@ -7,12 +7,10 @@
 # combustion also increases. Although there are fluctuations, the overall trend
 # is increasing.
 
-rm(list = ls())
 
 library(dplyr)
 library(lintr)
 library(ggplot2)
-
 
 fossil_fuel_combustion <- read.csv("data/fossil-fuel-primary-energy.csv",
                                    stringsAsFactors = FALSE)
@@ -28,3 +26,4 @@ scatter_plot_chart <- function(dataset) {
 }
 
 scatter_plot <- scatter_plot_chart(fossil_fuel_combustion)
+

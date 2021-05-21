@@ -2,7 +2,7 @@ library(ggplot2)
 library(plotly)
 
 fossil_fuel_combustion <- read.csv("data/fossil-fuel-primary-energy.csv",
-                                                stringsAsFactors = FALSE)
+                                   stringsAsFactors = FALSE)
 
 only_2019 <- fossil_fuel_combustion %>%
   filter(Year == "2019") %>% 
