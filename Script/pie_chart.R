@@ -8,7 +8,7 @@ only_2019 <- fossil_fuel_combustion %>%
   filter(Year == "2019")
 
 pie_chart <- function(dataset) {
-  fig <- plot_ly(dataset, labels = ~, values = ~1, type = "pie")
+  fig <- plot_ly(dataset, labels = ~Entity, values = ~1, type = "pie")
   fig <- fig %>% layout(title = "2019 Fossil Fuel Usage Breakdown",
                         xaxis = list(showgrid = FALSE,
                                      zeroline = FALSE,
@@ -19,3 +19,4 @@ pie_chart <- function(dataset) {
 }
 
 pie_plot <- pie_chart(fossil_fuel_combustion)
+
