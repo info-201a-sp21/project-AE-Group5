@@ -13,7 +13,7 @@ source("Script/bar_chart.R")
 
 ## Introduction
 
-The dataset we used concerns the use of fossil fuels by county. More specifically, the data show fossil fuel consumption throughout the last few decades in a multitude of countries in terawatt-hours. The detailed data allow us to thoroughly analyze numerous trends such as the fossil fuel consumption over the years of certain countries, grouping them by either their geography or other factors. We can also compare fossil fuel consumption data to climate change data in order to have a more in-depth analysis about trends in that area and see to what extent these variables correlate.
+The dataset we used concerns the use of fossil fuels by country. More specifically, the data show fossil fuel consumption throughout the last few decades in a multitude of countries in terawatt-hours. The detailed data allow us to thoroughly analyze numerous trends such as the fossil fuel consumption over the years of certain countries, grouping them by either their geography or other factors. We can also compare fossil fuel consumption data to climate change data in order to have a more in-depth analysis about trends in that area and see to what extent these variables correlate.
 
 ## Summary Information
 
