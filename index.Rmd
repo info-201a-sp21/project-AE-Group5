@@ -7,6 +7,7 @@ source("Script/aggregate_table.R")
 source("Script/scatter plot.R")
 source("Script/summary information.R")
 source("Script/bar_chart.R")
+source("Script/pie_chart.R")
 ```
 
 # Summary Report
@@ -41,4 +42,11 @@ The purpose of this scatter plot is to display the relationship between each yea
 show(bar_plot)
 ```
 
-The purpose of this stacked bar chart is to show fossil fuel usage of each country by decade, thereby allowing to compare each individual country's usage and its increase over the years. 
+The purpose of this stacked bar chart is to show fossil fuel usage of each country by decade, thereby allowing to compare each individual country's usage and its increase over the years.
+
+
+## Pie Chart
+
+```{r}
+show(pie_plot)
+```
