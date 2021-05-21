@@ -42,7 +42,7 @@ The purpose of this scatter plot is to display the relationship between each yea
 show(bar_plot)
 ```
 
-The purpose of this stacked bar chart is to show fossil fuel usage of each country by decade, thereby allowing to compare each individual country's usage and its increase over the years.
+The purpose of this stacked bar chart is to show fossil fuel usage of each country by decade, thereby allowing to compare each individual country's usage and its increase over the years. One interesting observation is that North American virtually mirrors the usage of the United States, as that is the dominant country in the continent. China is also an interesting case due to its major increase from the prior decades. Whilst countries like the United States and the continent of Europe have three fairly equal bars, China has consumption levels that increased very dramatically. India had a similar trend to China just on a much smaller scale. What is consistent with other data visualizations is that virtually every country increased its consumption from each respective date, with only a handful of exceptions (Ex. Germany or France).
 
 
 ## Pie Chart
@@ -50,3 +50,6 @@ The purpose of this stacked bar chart is to show fossil fuel usage of each count
 ```{r}
 show(pie_plot)
 ```
+
+
+The purpose of this pie chart is to show fossil fuel usage broken down by country in 2019, which allows to compare the relative usage of each country.
