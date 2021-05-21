@@ -18,14 +18,15 @@ bar_chart <- function(dataset) {
   ggplot(bar_chart_info) +
     geom_col(
       mapping = aes(x = country, y = Fossil.Fuels..TWh., fill = Year),
-      width = 0.8
+      width = 0.6
     ) +
     scale_fill_gradient(low = "darkgray", high = "darkred") +
     labs(
       title = " Fossil Fuels Combustion from 1965, 1992 and 2019 by Country",
       x = "Country",
       y = "Fossil Fuels (TWh)"
-    ) +
+    ) + 
+    theme(axis.text = element_text(size = 8))+
     coord_flip()
 }
 

@@ -50,7 +50,7 @@ The purpose of this scatter plot is to display the relationship between each yea
 
 ## Bar Chart
 
-```{r echo = FALSE}
+```{r echo = FALSE, fig.width = 11,fig.height = 10}
 show(bar_plot)
 ```
 
