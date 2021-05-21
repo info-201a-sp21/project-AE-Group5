@@ -52,4 +52,4 @@ show(pie_plot)
 ```
 
 
-The purpose of this pie chart is to show fossil fuel usage broken down by country in 2019, which allows to compare the relative usage of each country.
+The purpose of this modified pie chart is to show fossil fuel usage broken down by country in 2019, which allows to compare the relative usage of each country. As this shows the the usage in relative terms, it can be observed that China is the country that by far uses the most fossil fuels, followed by the United States (or North America and then Europe if including continents). This data visualization confirms previous information which shows China's massive increase in its fossil fuel usage, along with the stable but major level of fossil fuel consumption of the United States in recent years. It is also interesting to see how only a handful countries stand out in this plot, with the majority having fossil fuel consumption at relatively low levels comparatively.
