@@ -1,18 +1,16 @@
 # Scatter plot
 
 # This plot attempts to express the relationship between the year and fossil
-# fuel combustion around the world, and the sactter plot can help to visualize
+# fuel combustion around the world, and the scatter plot can help to visualize
 # the trend.
 # It demonstrates that as the year increases, the amount of fossil fuel
 # combustion also increases. Although there are fluctuations, the overall trend
 # is increasing.
 
-rm(list = ls())
 
 library(dplyr)
 library(lintr)
 library(ggplot2)
-
 
 fossil_fuel_combustion <- read.csv("data/fossil-fuel-primary-energy.csv",
                                    stringsAsFactors = FALSE)

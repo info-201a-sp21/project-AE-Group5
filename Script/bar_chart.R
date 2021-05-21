@@ -3,10 +3,9 @@
 library("dplyr")
 library("ggplot2")
 
-
 fossil_fuel_combustion <- read.csv("data/fossil-fuel-primary-energy.csv",
-  stringsAsFactors = FALSE
-)
+                                   stringsAsFactors = FALSE)
+
 names(fossil_fuel_combustion)[1] <- "country"
 
 
@@ -19,7 +18,7 @@ bar_chart <- function(dataset) {
   ggplot(bar_chart_info) +
     geom_col(
       mapping = aes(x = country, y = Fossil.Fuels..TWh., fill = Year),
-      width = 0.8
+      width = 0.6
     ) +
     scale_fill_gradient(low = "darkgray", high = "darkred") +
     labs(
@@ -27,6 +26,7 @@ bar_chart <- function(dataset) {
       x = "Country",
       y = "Fossil Fuels (TWh)"
     ) +
+    theme(axis.text = element_text(size = 8)) +
     coord_flip()
 }
 
