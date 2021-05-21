@@ -58,7 +58,7 @@ The purpose of this stacked bar chart is to show fossil fuel usage of each count
 
 ## Pie Chart
 
-```{r echo=FALSE}
+```{r echo=FALSE,fig.width = 22,fig.height = 15}
 show(pie_plot)
 ```
 
