@@ -26,4 +26,3 @@ scatter_plot_chart <- function(dataset) {
 }
 
 scatter_plot <- scatter_plot_chart(fossil_fuel_combustion)
-

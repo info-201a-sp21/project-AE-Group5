@@ -19,4 +19,3 @@ pie_chart <- function(dataset) {
 }
 
 pie_plot <- pie_chart(fossil_fuel_combustion)
-

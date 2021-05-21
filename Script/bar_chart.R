@@ -25,8 +25,8 @@ bar_chart <- function(dataset) {
       title = " Fossil Fuels Combustion from 1965, 1992 and 2019 by Country",
       x = "Country",
       y = "Fossil Fuels (TWh)"
-    ) + 
-    theme(axis.text = element_text(size = 8))+
+    ) +
+    theme(axis.text = element_text(size = 8)) +
     coord_flip()
 }
 
