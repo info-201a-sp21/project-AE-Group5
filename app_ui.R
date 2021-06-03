@@ -87,8 +87,8 @@ Map_sidebar_content1 <- sidebarPanel(
 )
 map_main_content <- mainPanel(
   p("This is the interactive map which display the earth surface temperature 
-  change by comparing countries in different years.Through this map, it show us 
-  a better idea of climate trends in 50 years."),
+  change by comparing countries in different years. Through this map, we can have 
+  a better idea of climate trends in 50 years from 1964-2013."),
   plotlyOutput("map"),
   h5("Insights:"),
   h6("- The general global trend of earth surface temperature is increasing."),
