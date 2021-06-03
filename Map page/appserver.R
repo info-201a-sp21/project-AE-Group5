@@ -25,6 +25,9 @@ temperature_change <-  df %>%
           projection = list(type = 'Mercator')
         )
         
+        temperature_change <- temperature_change %>%
+          filter(year == input$select)
+        
         fig <- plot_geo(temperature_change, locationmode = "country names") %>% 
           add_trace(
             z = ~AverageTemperature, color = ~AverageTemperature, colors = "Blues",
