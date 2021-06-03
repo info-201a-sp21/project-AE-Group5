@@ -7,7 +7,7 @@ intro_sidebar_content <- sidebarPanel(
     emissions of greenhouse gases and the resulting large-scale shifts in
     weather patterns."),
   p("To cope with this problem, Paris Aggrement was signed by
-    nations to maintain the temperature well under 2.0 ¡ãC (3.6 ¡ãF) in 2015.
+    nations to maintain the temperature well under 2.0 ??C (3.6 ??F) in 2015.
     However, the temperature is sitll higher than this value now."),
   p("(Cited from Wikipedia)")
   
@@ -18,7 +18,7 @@ intro_main_content <- mainPanel(
   h3("Why This Matters?"),
   p("Environmental issues are becoming more and more severe in the present
     world. One of the factors that cause the deterioration of the environment
-    is human activities. We want to find out how the human¡¯s actions impact the
+    is human activities. We want to find out how the human??s actions impact the
     environment and what are the potential dangers it brings to the future.
     Climate change is one of the most serious problem that needs to be solved
     as soon as possible."),
