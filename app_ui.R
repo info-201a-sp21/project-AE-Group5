@@ -105,9 +105,11 @@ map_panel <- tabPanel(
   )
 )
 
-ui <- navbarPage(
+ui <- fluidPage(
+  includeCSS("style.css"),
+  navbarPage(
   "Climate Change",
   intro_panel,
-  scatter_panel,
-  map_panel
+  map_panel,
+  scatter_panel)
 )
