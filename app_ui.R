@@ -14,6 +14,7 @@ intro_sidebar_content <- sidebarPanel(
 
 intro_main_content <- mainPanel(
   h2("Climate Change"),
+  img(src = "climate-crisis-classes.jpg", height = 350, width = 550),
   h3("Why This Matters?"),
   p("Environmental issues are becoming more and more severe in the present
     world. One of the factors that cause the deterioration of the environment
@@ -21,6 +22,11 @@ intro_main_content <- mainPanel(
     environment and what are the potential dangers it brings to the future.
     Climate change is one of the most serious problem that needs to be solved
     as soon as possible."),
+  h3("The Source of Data:"),
+  p("In our research, we use three different datasets. The datasets of forest
+    loss and fossil fuel combustion are downloaded from the website called
+    Our World in Data, and the dataset of temperature change comes from 
+    Kaggle." ),
   h3("Research Questions:"),
   h4("How is temperature change during these years?"),
   h4("How does human activities impact the envrionment?")
