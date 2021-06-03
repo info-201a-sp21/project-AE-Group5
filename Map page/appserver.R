@@ -13,18 +13,8 @@ temperature_change <-  df %>%
   filter (!duplicated(year)) %>% 
   select(Country, year, AverageTemperature)
 
-#map function
-create_map <- function(data, map.var) {
-  
-    l <- list(color = toRGB("grey"), width = 0.2)
-    g <- list(
-      showframe = FALSE,
-      showcoastlines = FALSE,
-      projection = list(type = 'Mercator')
-    )
-    
 #function 
-    server <- function(input,output)
+    server <- function(input,output) {
       output$map <- renderPlotly({
         
         l <- list(color = toRGB("grey"), width = 0.2)
@@ -37,7 +27,7 @@ create_map <- function(data, map.var) {
         
         fig <- plot_geo(temperature_change, locationmode = "country names") %>% 
           add_trace(
-            z = ~input$select, color = ~input$select, colors = "Blues",
+            z = ~AverageTemperature, color = ~AverageTemperature, colors = "Blues",
             text = ~Country, locations = ~Country, marker = list(line = l)
           ) %>% 
           colorbar(title = "Average Temperature") %>% 
@@ -48,5 +38,5 @@ create_map <- function(data, map.var) {
         return(fig)
       })
 }
-    
+
    
