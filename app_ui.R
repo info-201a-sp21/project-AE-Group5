@@ -115,19 +115,17 @@ barplot_sidebar_content <- sidebarPanel(
   )
 )
 
+
 barplot_main_content <- mainPanel(
   p("This is an interactive bar plot that shows the net change of forest area 
   globally as well as different countries in the wolrd, and it is divided into 
   10 years period to deal with the volatility of changes.The trend of deforestation
   is varied in different countries, but the world's data demonstrates that the amount
   of forest loss is decreasing over the years."),
-  plotlyOutput("map"),
+  plotlyOutput("barPlot"),
   h5("Insights:"),
   h6("- The amount of deforestation is decreasing globally."),
   h6("- Bigger countries with higher populations have a greater rate of deforestation.")
-)
-barplot_main_content <- mainPanel(
-  plotlyOutput("barPlot")
 )
 
 barplot_panel <- tabPanel(
