@@ -111,3 +111,21 @@ ui <- navbarPage(
   scatter_panel,
   map_panel
 )
+
+barplot_panel <- tabPanel("Barplot Breakdown of Fossil Fuel Usage",
+         sidebarLayout(
+           sidebarPanel(
+             uiOutput("barplot_widget"),
+             uiOutput("year_widget")
+           ),
+           mainPanel(
+             
+           )
+         ))
+
+conclusion_panel <- tabPanel("Conclusions",
+         sidebarLayout(
+           mainPanel(
+             
+         )
+))

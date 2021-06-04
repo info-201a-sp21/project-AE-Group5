@@ -64,6 +64,35 @@ server <- function(input, output) {
     return(fig)
   })
   
+  output$barplot_widget <- renderUI({
+    selectInput("country_c", label = "Choose Country",
+                choices = unique(fossil_fuel$Entity),
+                selected = "World")
+  })
+  
+  output$year_widget <- renderUI({
+    radioButtons("year_c", label = "Choose Year",
+                 choices = unique(fossil_fuel$Entity),
+                 selected = "1965")
+  })
+  
+  barplot_data <- reactive({
+    fossil_fuel %>%
+      select(Entity, Year, Fossil.Fuels..TWh.) %>%
+      filter(Year %in% input$year_c) %>%
+      filter(Entity %in% input$country_c)
+  })
+  
+  output$barplot_data <- renderPlot({
+    ggplot(barplot_data(),aes(Entity, Fossil.Fuels..TWh., fill = Entity)) +
+      geom_col() +
+      geom_text(aes(label = Fossil.Fuels..TWh.), vjust = -0.2) +
+      labs(x = "Countries",
+           y = "Fossil Fuel Usage") +
+      theme(axis.text.x = element_text(angle = 45))
+  })
+  
+  
 }
 
 
