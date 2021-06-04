@@ -155,9 +155,9 @@ summary_page <- tabPanel(
     "),
   br(),
   h3("China Fossil Fuel Combustion Trend"),
-  img(src = "CHINA.png"),
+  img(src = "CHINA.png", height = 350, width = 550),
   h3("USA Fossil Fuel Combustion Trend"),
-  img(src = "US.png"),
+  img(src = "US.png", height = 350, width = 550),
   h2("Earth Surface Temperature"),
   hr(),
   p("This map shows that the map is global earth surface temperature  is 
@@ -172,9 +172,9 @@ summary_page <- tabPanel(
     factors that cause surface temperature increase."),
   br(),
   h3("Earth Surface Temperature in 1964"),
-  img(src = "1964.jpg"),
+  img(src = "1964.jpg", height = 350, width = 550),
   h3("Earth Surface Temperature in 2013"),
-  img(src = "2013.jpg"),
+  img(src = "2013.jpg", height = 350, width = 550),
   h2("Deforestation Trend"),
   hr(),
   p(" The bar plot shows that the overall trend of deforestation is decreasing. 
@@ -188,9 +188,9 @@ summary_page <- tabPanel(
   different countries contribute to the global climate change."),
   br(),
   h3("Global Deforestation"),
-  img(src = "globaldeforestation.jpg"),
+  img(src = "globaldeforestation.jpg", height = 350, width = 550),
   h3("China Deforestation"),
-  img(src = "chinadeforestation.jpg"),
+  img(src = "chinadeforestation.jpg", height = 350, width = 550),
 )
 
 

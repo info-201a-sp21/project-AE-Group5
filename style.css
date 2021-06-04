@@ -8,6 +8,7 @@ body {
   
 }
 
+
 .tabPanel-default {
   color : black;
 
@@ -15,4 +16,8 @@ body {
 
 h2 {
   font-family: 'Times New Roman', sans-serif;
+}
+
+h3 {
+  color : #4682B4;
 }
