@@ -18,9 +18,9 @@ summary <- tabPanel(
     "),
   br(),
   h3("China Fossil Fuel Combustion Trend"),
-  img(src = "CHINA"),
+  img(src = "CHINA.png"),
   h3("USA Fossil Fuel Combustion Trend"),
-  img(src = "US"),
+  img(src = "US.png"),
   h2("Earth Surface Temperature"),
   hr(),
   P("This map shows that the map is global earth surface temperature general is 
