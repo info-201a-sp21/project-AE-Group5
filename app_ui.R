@@ -56,7 +56,7 @@ scatter_main_content <- mainPanel(
     CO2 emssion, leading to serious envrironmental issues."),
   p("This scatter attempts to show the trend of fossil fuel combustion change.
     The plot is made to sort by different countries, and it can also make a
-    plot that shows the world's data (whihc is the defalt value). The
+    plot that shows the world's data (which is the default value). The
     scatter plot demonstrates an increasing trend of fossil fuel combustion."),
   plotlyOutput("scatterPlot"),
   h5("Insights:"),
@@ -118,8 +118,8 @@ barplot_sidebar_content <- sidebarPanel(
 
 barplot_main_content <- mainPanel(
   p("This is an interactive bar plot that shows the net change of forest area 
-  globally as well as different countries in the wolrd, and it is divided into 
-  10 years period to deal with the volatility of changes.The trend of deforestation
+  globally as well as in different countries in the wolrd, and it is divided into 
+  10 year periods to deal with the volatility of changes. The trend of deforestation
   is varied in different countries, but the world's data demonstrates that the amount
   of forest loss is decreasing over the years."),
   plotlyOutput("barPlot"),
@@ -160,14 +160,14 @@ summary_page <- tabPanel(
   img(src = "US.png"),
   h2("Earth Surface Temperature"),
   hr(),
-  p("This map shows that the map is global earth surface temperature general is 
+  p("This map shows that the map is global earth surface temperature  is 
   generally increasing. Overall, the global temperature increases around 0.5 to 
   1 Celsius in 50 years. Besides, the interactive map shows how the earth's 
   temperature changes in a specific country. For examples,
   the United States average temperature in 1964 was -3.196 Celsius, -2.155 in 2013.
     Russian, average temperature was -24.793 in 1964 and -24.229 in 2013. 
-    This page of the map bring us a clear idea of how the earth temperature 
-    change in  countries or global, climate change trend is harmful to the environment,
+    This page of the map brings us a clear idea of how the earth temperature 
+    change in countries or global, climate change trend is harmful to the environment,
     and we predict that the fossil fuel combustion spending can be one of the 
     factors that cause surface temperature increase."),
   br(),
