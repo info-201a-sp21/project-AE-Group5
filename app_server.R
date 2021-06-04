@@ -2,16 +2,17 @@ library(dplyr)
 library(ggplot2)
 library(plotly)
 
-
 fossil_fuel <- read.csv("data/fossil-fuel-primary-energy.csv")
 
 df <- read.csv("data/GlobalLandTemperaturesByCountry.csv")
+
+forest_loss <- read.csv("data/annual-deforestation.csv")
 
 temperature_change <-  df %>%
   mutate(year =
            format(as.Date(df$dt),format = "%Y"
            )) %>% 
-  filter(year %in% 1964:2013) %>%
+  filter(year %in% 1963:2013) %>%
   group_by(Country) %>% 
   filter (!duplicated(year)) %>% 
   select(Country, year, AverageTemperature)
@@ -29,6 +30,17 @@ create_scatter <- function(data, search) {
   return(p)
 }
 
+create_barplot <- function(data, search) {
+  data <- data %>%
+    filter(Entity == search)
+  
+  p <- ggplot(data = data) +
+    geom_bar(mapping = aes(x = Year, y = Deforestation), stat = "identity") +
+    labs(title = paste0("Forest Loss in ", data$Entity),
+         x = "Year", y = "Deforestation")
+  p <- ggplotly(p)
+  return(p)
+}
 
 
 server <- function(input, output) {
@@ -56,13 +68,18 @@ server <- function(input, output) {
         z = ~AverageTemperature, color = ~AverageTemperature, colors = "Blues",
         text = ~Country, locations = ~Country, marker = list(line = l)
       ) %>% 
-      colorbar(title = "Average Temperature") %>% 
+      colorbar(title = "Average Temperature", tickprefix = "oC") %>% 
       layout(
         title = paste0("Global Average Temperature in",input$select),
         geo = g
       )
     return(fig)
   })
+  
+  # page 3
+  output$barPlot <- renderPlotly(
+    return(create_barplot(forest_loss, input$plotSearch))
+  )
   
 }
 

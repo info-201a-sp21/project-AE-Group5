@@ -35,7 +35,7 @@ temperature_change <-  df %>%
           ) %>% 
           colorbar(title = "Average Temperature") %>% 
           layout(
-            title = paste0("Global Average Temperature in",input$select),
+            title = paste0("Global Average Temperature in", input$select),
             geo = g
           )
         return(fig)

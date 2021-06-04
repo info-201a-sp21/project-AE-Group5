@@ -78,7 +78,7 @@ scatter_panel <- tabPanel(
 #Interactive map design
 
 #map_design
-Map_sidebar_content1 <- sidebarPanel(
+Map_sidebar_content <- sidebarPanel(
   selectInput(
     "select", label = "Year", 
     choices = temperature_change$year
@@ -87,8 +87,8 @@ Map_sidebar_content1 <- sidebarPanel(
 )
 map_main_content <- mainPanel(
   p("This is the interactive map which display the earth surface temperature 
-  change by comparing countries in different years.Through this map, it show us 
-  a better idea of climate trends in 50 years."),
+  change by comparing countries in different years. Through this map, we can have 
+  a better idea of climate trends in 50 years from 1963-2013."),
   plotlyOutput("map"),
   h5("Insights:"),
   h6("- The general global trend of earth surface temperature is increasing."),
@@ -100,8 +100,31 @@ map_panel <- tabPanel(
   "Earth Surface Temperature",
   titlePanel("Earth Surface Temperature"),
   sidebarLayout(
-    Map_sidebar_content1,
+    Map_sidebar_content,
     map_main_content
+  )
+)
+
+
+# Interactive Bar plot
+barplot_sidebar_content <- sidebarPanel(
+  selectInput(
+    inputId = "plotSearch",
+    label = "Find a country (capitalize the first letter)",
+    choices = unique(forest_loss$Entity)
+  )
+)
+
+barplot_main_content <- mainPanel(
+  plotlyOutput("barPlot")
+)
+
+barplot_panel <- tabPanel(
+  "Forest Loss",
+  titlePanel("Forest Loss"),
+  sidebarLayout(
+    barplot_main_content,
+    barplot_sidebar_content
   )
 )
 
@@ -111,5 +134,6 @@ ui <- fluidPage(
   "Climate Change",
   intro_panel,
   map_panel,
-  scatter_panel)
+  scatter_panel,
+  barplot_panel)
 )
