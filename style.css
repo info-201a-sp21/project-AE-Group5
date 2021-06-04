@@ -1,11 +1,10 @@
 body {
-  background-color: #C4A484;
+  background-color: #ADD8E6;
   color : black;
 }
 
 .navbar-default {
-  background-color: #addda7;
-  
+  background-color: #CCCCFF;
 }
 
 
@@ -21,3 +20,5 @@ h2 {
 h3 {
   color : #4682B4;
 }
+
+

@@ -18,7 +18,7 @@ intro_main_content <- mainPanel(
   h3("Why This Matters?"),
   p("Environmental issues are becoming more and more severe in the present
     world. One of the factors that cause the deterioration of the environment
-    is human activities. We want to find out how the human??s actions impact the
+    is human activities. We want to find out how the human's actions impact the
     environment and what are the potential dangers it brings to the future.
     Climate change is one of the most serious problem that needs to be solved
     as soon as possible."),
@@ -110,7 +110,7 @@ map_panel <- tabPanel(
 barplot_sidebar_content <- sidebarPanel(
   selectInput(
     inputId = "plotSearch",
-    label = "Find a country (capitalize the first letter)",
+    label = "Find a country",
     choices = unique(forest_loss$Entity)
   )
 )
@@ -171,8 +171,6 @@ summary_page <- tabPanel(
     and we predict that the fossil fuel combustion spending can be one of the 
     factors that cause surface temperature increase."),
   br(),
-  h3("Earth Surface Temperature in 1964"),
-  img(src = "1964.jpg", height = 350, width = 550),
   h3("Earth Surface Temperature in 2013"),
   img(src = "2013.jpg", height = 350, width = 550),
   h2("Deforestation Trend"),

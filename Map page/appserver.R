@@ -8,7 +8,7 @@ temperature_change <-  df %>%
   mutate(year =
            format(as.Date(df$dt),format = "%Y"
            )) %>% 
-  filter(year %in% 1964:2013) %>%
+  filter(year %in% 1963:2013) %>%
   group_by(Country) %>% 
   filter (!duplicated(year)) %>% 
   select(Country, year, AverageTemperature)

@@ -5,7 +5,7 @@ Map_sidebar_content1 <- sidebarPanel(
 selectInput(
   "select", label = "Year", 
   choices = temperature_change$year,
-  selected = "1964"
+  selected =temperature_change$year[,4]
 ),
 
 )
