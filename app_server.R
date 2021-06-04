@@ -2,7 +2,6 @@ library(dplyr)
 library(ggplot2)
 library(plotly)
 
-
 fossil_fuel <- read.csv("data/fossil-fuel-primary-energy.csv")
 
 df <- read.csv("data/GlobalLandTemperaturesByCountry.csv")

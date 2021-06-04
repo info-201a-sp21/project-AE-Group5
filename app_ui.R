@@ -118,9 +118,6 @@ barplot_panel <- tabPanel("Barplot Breakdown of Fossil Fuel Usage",
              uiOutput("barplot_widget"),
              uiOutput("year_widget")
            ),
-           mainPanel(
-             
-           )
          ))
 
 conclusion_panel <- tabPanel("Conclusions",
