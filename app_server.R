@@ -11,7 +11,7 @@ temperature_change <-  df %>%
   mutate(year =
            format(as.Date(df$dt),format = "%Y"
            )) %>% 
-  filter(year %in% 1964:2013) %>%
+  filter(year %in% 1963:2013) %>%
   group_by(Country) %>% 
   filter (!duplicated(year)) %>% 
   select(Country, year, AverageTemperature)
@@ -28,7 +28,6 @@ create_scatter <- function(data, search) {
   p <- ggplotly(p)
   return(p)
 }
-
 
 
 server <- function(input, output) {
@@ -56,7 +55,7 @@ server <- function(input, output) {
         z = ~AverageTemperature, color = ~AverageTemperature, colors = "Blues",
         text = ~Country, locations = ~Country, marker = list(line = l)
       ) %>% 
-      colorbar(title = "Average Temperature") %>% 
+      colorbar(title = "Average Temperature", tickprefix = "ºC") %>% 
       layout(
         title = paste0("Global Average Temperature in",input$select),
         geo = g
