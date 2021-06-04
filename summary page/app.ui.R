@@ -30,7 +30,19 @@ summary <- tabPanel(
   the United States average temperature in 1964 was -3.196 Celsius, -2.155 in 2013.
     Russian, average temperature was -24.793 in 1964 and -24.229 in 2013. 
     This page of the map bring us a clear idea of how the earth temperature 
-    change in  countries or global, climate change trend is harm to environment,
+    change in  countries or global, climate change trend is harmful to the environment,
     and we predict that the fossil fuel combustion spending can be one of the 
-    factors that cause surface temperature increase.")
+    factors that cause surface temperature increase."),
+  br(),
+  h4("Deforestation trend"),
+  hr(),
+  P(" The bar plot shows that the overall trend of deforestation is decreasing. 
+  The amount of forest loss has reduced by about 5 to 6 million trees over two decades.
+  The world's data for deforestation was at about 15-16 million in 1990 and it 
+  decreases to 10-11 million in 2020. Big countries such as China, Mexico and Canada 
+  are reducing the deforesation levels but to varying degrees. Some countries like China
+  decreased at lower level than countries like Canada. Through the bar plot, we learned
+  that deforestation is still occuring in many countries, but overall it has decreased worldwide.
+  Knowing this information helps us to analyze the amount of deforestation in each country and how 
+  different countries contribute to the global climate change."),
 )

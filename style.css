@@ -1,9 +1,18 @@
 body {
-  background-color: #ADD8E6;
+  background-color: #C4A484;
   color : black;
 }
 
 .navbar-default {
-  background-color: #CCCCFF;
+  background-color: #addda7;
+  
 }
 
+.tabPanel-default {
+  color : black;
+
+}
+
+h2 {
+  font-family: 'Times New Roman', sans-serif;
+}

@@ -8,7 +8,7 @@ intro_sidebar_content <- sidebarPanel(
     weather patterns."),
   p("To cope with this problem, Paris Aggrement was signed by
     nations to maintain the temperature well under 2.0 ??C (3.6 ??F) in 2015.
-    However, the temperature is sitll higher than this value now."),
+    However, the temperature is still higher than this value now."),
   p("(Cited from Wikipedia)")
   
 )
